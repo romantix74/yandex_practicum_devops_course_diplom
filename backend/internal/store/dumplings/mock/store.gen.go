@@ -44,7 +44,8 @@ func (m *MockStore) CreateOrder(ctx context.Context, items ...dumplings.OrderIte
 	}
 	ret := m.ctrl.Call(m, "CreateOrder", varargs...)
 	ret0, _ := ret[0].(int64)
-	ret1, _ := ret[1].(error)return ret0, ret1
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
 }
 
 // CreateOrder indicates an expected call of CreateOrder.
