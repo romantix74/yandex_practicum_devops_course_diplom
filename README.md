@@ -5,11 +5,11 @@
 ```bash
 npm install
 npm run serve
-npm run build
 ```
 
 ## Backend
 
 ```bash
 go run ./cmd/api
+go test -v ./... 
 ```
