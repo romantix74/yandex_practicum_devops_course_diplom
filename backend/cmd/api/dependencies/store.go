@@ -1,8 +1,8 @@
 package dependencies
 
 import (
-	"github.com/Yandex-Practicum/pelemennaya/internal/store/dumplings"
-	"github.com/Yandex-Practicum/pelemennaya/internal/store/dumplings/fake"
+	"github.com/Yandex-Praktikum-DevOps/momo-store-exam/internal/store/dumplings"
+	"github.com/Yandex-Praktikum-DevOps/momo-store-exam/internal/store/dumplings/fake"
 )
 
 // NewFakeDumplingsStore returns new fake store for app

@@ -6,7 +6,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/Yandex-Practicum/pelemennaya/internal/store/dumplings"
+	"github.com/Yandex-Praktikum-DevOps/momo-store-exam/internal/store/dumplings"
 )
 
 // Store is a fake in-memory implementation of dumplings.Store
