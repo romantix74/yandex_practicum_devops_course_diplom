@@ -6,8 +6,8 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/Yandex-Practicum/pelemennaya/internal/logger"
-	"github.com/Yandex-Practicum/pelemennaya/internal/store/dumplings"
+	"gitlab.praktikum-services.ru/Stasyan/momo-store/internal/logger"
+	"gitlab.praktikum-services.ru/Stasyan/momo-store/internal/store/dumplings"
 )
 
 func (i *Instance) CreateOrderController(w http.ResponseWriter, r *http.Request) {

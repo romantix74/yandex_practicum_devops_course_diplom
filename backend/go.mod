@@ -1,4 +1,4 @@
-module github.com/Yandex-Practicum/pelemennaya
+module gitlab.praktikum-services.ru/Stasyan/momo-store
 
 go 1.17
 
