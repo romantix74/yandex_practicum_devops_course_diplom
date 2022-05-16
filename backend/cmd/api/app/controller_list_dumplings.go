@@ -7,8 +7,8 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/Yandex-Praktikum-DevOps/momo-store-exam/internal/logger"
-	"github.com/Yandex-Praktikum-DevOps/momo-store-exam/internal/store/dumplings"
+	"gitlab.praktikum-services.ru/Stasyan/momo-store/internal/logger"
+	"gitlab.praktikum-services.ru/Stasyan/momo-store/internal/store/dumplings"
 )
 
 func (i *Instance) ListDumplingsController(w http.ResponseWriter, r *http.Request) {

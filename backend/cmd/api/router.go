@@ -8,8 +8,8 @@ import (
 	"github.com/rs/cors"
 	"go.uber.org/zap"
 
-	"github.com/Yandex-Praktikum-DevOps/momo-store-exam/cmd/api/app"
-	"github.com/Yandex-Praktikum-DevOps/momo-store-exam/internal/logger"
+	"gitlab.praktikum-services.ru/Stasyan/momo-store/cmd/api/app"
+	"gitlab.praktikum-services.ru/Stasyan/momo-store/internal/logger"
 )
 
 func newRouter(app *app.Instance) (http.Handler, error) {

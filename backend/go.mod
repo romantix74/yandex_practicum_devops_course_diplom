@@ -1,4 +1,4 @@
-module github.com/Yandex-Praktikum-DevOps/momo-store-exam
+module gitlab.praktikum-services.ru/Stasyan/momo-store
 
 go 1.17
 

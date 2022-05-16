@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/Yandex-Praktikum-DevOps/momo-store-exam/cmd/api/dependencies"
+	"gitlab.praktikum-services.ru/Stasyan/momo-store/cmd/api/dependencies"
 )
 
 func TestFakeAppIntegrational(t *testing.T) {
