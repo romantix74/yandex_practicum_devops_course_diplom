@@ -16,7 +16,9 @@
 
       <li class="list-group-item list-bottom">
         <span class="col">Итого: <strong>${{$store.getters.cartTotal}}</strong></span>
-        <button class="btn btn-primary" :disabled="!$store.getters.numberOfItemsInCart">Оформить</button>
+        <router-link class="cart-link" to="/cart">
+            <button class="btn btn-primary" :disabled="!$store.getters.numberOfItemsInCart">Оформить</button>
+        </router-link>
       </li>
 
     </ul>
