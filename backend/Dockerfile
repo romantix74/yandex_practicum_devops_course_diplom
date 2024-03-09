@@ -8,16 +8,25 @@ RUN go mod download && go mod verify
 
 COPY . .
 
-WORKDIR /usr/src/app/cmd/api
-RUN go build -o /api
+RUN GOOS=linux go build -o /api ./cmd/api
 
-# RUN go run ./cmd/api
-
-# # CMD ["go", "build"]
-# CMD ["bash"]
+CMD ['sh']
 
 
+FROM gcr.io/distroless/base-debian12 AS build-release-stage
 
-FROM alpine:3
-COPY --from=builder api /bin/api
-ENTRYPOINT ["/bin/api"]
+WORKDIR /
+COPY --from=builder /api /api
+
+EXPOSE 8081
+CMD ["/api"]
+
+# ENTRYPOINT ["/api"]
+
+#FROM golang:1.22
+#alpine:latest
+#3.19.1
+# WORKDIR /app
+# COPY --from=builder /api /usr/local/bin/api
+# EXPOSE 8081
+# CMD ["/usr/local/bin/api"]
