@@ -1,0 +1,25 @@
+version: "3.3"
+
+services:
+  backend:
+    image: momo-backend
+    container_name: backend
+    ports:
+      - "8081:8081"
+    networks:
+      - momo-network
+
+  frontend:
+    image: momo-frontend
+    container_name: frontend
+    environment:
+      NODE_ENV: production
+      # VUE_APP_API_URL: http://backend:8081
+      BACKEND: backend:8081
+    ports:
+      - "8080:80"
+    networks:
+      - momo-network
+
+networks:
+  momo-network:
