@@ -1,4 +1,9 @@
 ---
+include:
+  - project: "templates/ci"
+    file: "DockerInDockerTemplate.yml"
+  - template: Security/SAST.gitlab-ci.yml
+
 cache:
   paths:
     - frontend/dist/frontend
