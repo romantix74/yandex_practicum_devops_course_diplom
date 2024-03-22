@@ -8,7 +8,6 @@ ENV NODE_ENV=development
 ENV VUE_APP_API_URL=/
 RUN npm run build
 
-
 # release
 FROM nginx:stable-alpine3.17-slim
 ENV BACKEND baceknd:8081 
