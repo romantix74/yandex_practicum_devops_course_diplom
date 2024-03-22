@@ -53,7 +53,7 @@ sonarqube-backend:
       -Dsonar.projectKey=${SONAR_PROJECT_KEY_BACKEND}
       -Dsonar.sources=.
       -Dsonar.host.url=${SONAR_URL}
-      -Dsonar.login=${SONAR_LOGIN_TOKEN}
+      -Dsonar.login=${SONAR_LOGIN_TOKEN_BACKEND}
 
 release:
   variables:
